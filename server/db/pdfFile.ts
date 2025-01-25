@@ -1,4 +1,6 @@
-import prisma from "~/lib/prisma";
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
 
 export const createPdfFile = async (data: any) => {
   const file = await prisma.pdfFile.create({ data });
