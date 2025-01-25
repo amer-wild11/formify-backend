@@ -4,4 +4,5 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@pinia/nuxt", "@prisma/nuxt", "@nuxt/icon"],
   css: ["~/assets/scss/main.scss"],
+  ssr: true,
 });
